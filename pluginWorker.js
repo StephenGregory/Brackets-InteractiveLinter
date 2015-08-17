@@ -58,7 +58,6 @@ function PluginLoader(settings) {
 PluginLoader.prototype.lint = function(data) {
     var _self = this;
 
-    // Lint!
     data = data.data;
     var lintResult = _self.byName[data.name].lint(data.text, data.settings);
 
